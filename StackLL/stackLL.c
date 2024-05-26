@@ -72,14 +72,41 @@ int pop(struct Node * tp){
     }
 };
 
+int stackTop(struct Node * tp){
+    if(isEmpty(tp)){
+        printf("Stack is empty.\n");
+    }else{
+        return top->data;
+    }
+};
+
+int stackBottom(struct Node * tp){
+    if(isEmpty(tp)){
+        printf("Stack is empty.\n");
+    }else{
+     struct Node * n = tp;
+     while(n->next != NULL){
+        n = n->next;
+     }
+     return n->data;
+    }
+}
+
 int main(){
     top = push(top, 38);
     top = push(top, 29);
+    top = push(top, 27);
+    top = push(top, 79);
+    top = push(top, 74);
     top = push(top, 68);
     linkListTraversal(top);
     printf("The popped value is %d\n", pop(top));
     linkListTraversal(top);
-    printf("The peek value is %d\n", peek(1));
+    printf("The peek value is %d\n", peek(2));
     
+    printf("The stack top is %d\n", stackTop(top));
+
+    printf("The stack bottom is %d\n", stackBottom(top));
+
     return 1;
 };
