@@ -17,7 +17,7 @@ void createArray(struct myArray* a, int tSize, int uSize){
     a->used_size = uSize;
     a->ptr = (int *)malloc(tSize*sizeof(int));
 };
-
+    
 void setVal(struct myArray* a){
     int n;
     for (int i = 0; i < a->used_size; i++)
