@@ -1,5 +1,5 @@
 
-# Singly Linked List Insertioin
+# Singly Linked List Insertion
 
 #### Description
 
@@ -99,7 +99,7 @@ It's time complexit is O(1) because no loop at all and not depends on the size o
 
 
 Visual example is here:
-![Insertion at First](insertioin-at-first.png)
+![Insertion at First](insertion-at-first.png)
 
 
 ---
@@ -129,7 +129,7 @@ Her in `insertAtEnd` function firstly we created a new Node and allocated it in 
 It's time complexit is O(n) because it's have a loop and if the list size increases then loop cycle also increases.
 
 Visual example is here:
-![Insertion at First](insertioin-at-end.png)
+![Insertion at First](insertion-at-end.png)
 
 ---
 ### Insertion At Index
@@ -161,7 +161,7 @@ It's time complexit is O(n) because it's have a loop and worst case is if we hav
 
 
 Visual example is here:
-![Insertion at Index](insertioin-at-index.png)
+![Insertion at Index](insertion-at-index.png)
 
 ---
 ### Insertion After Node
