@@ -186,7 +186,7 @@ It's time complexit is O(1) because the previous Node is already given only we h
 
 In `insertAfterNode` function it requires head of our Linked List, further previous Node and data that need to be inserted. We create a new Node and allocate it in memory and named it as `ptr` then set the data of our created Node, then the next of our created Node becomes equals to next of our previous Node and next of our previousNode becomes equal to our created Node. Yep it's simple as that.
 
-
+---
 
 ### Use these functions in main function
 ```c
