@@ -19,7 +19,6 @@ void indexInsertion(int arr[], int element, int index, int capacity, int size){
     }
     arr[index] = element;
     return 1;
-    
 }
 
 int main(){
@@ -31,6 +30,4 @@ int main(){
     indexInsertion(arr, element, index, capacity, size);
     size = size+1;
     traversal(arr, size);
-
-
 }

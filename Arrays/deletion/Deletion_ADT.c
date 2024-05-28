@@ -21,7 +21,7 @@ int main(){
     int arr[100] = {20, 30, 80, 60, 10};
     int size = 5;
     int capacity = 100;
-    int index = 0;
+    int index = 1;
     traversal(arr, size);
     IndexDeletion(arr, index, size);
     size = size - 1;

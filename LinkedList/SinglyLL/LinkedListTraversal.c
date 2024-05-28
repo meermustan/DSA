@@ -34,7 +34,5 @@ int main(){
     third->next = NULL;
 
     linkListTraversal(head);
-
     return 0;
-
 }
