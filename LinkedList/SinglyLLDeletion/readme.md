@@ -270,6 +270,9 @@ struct  Node * deleteAtValue(struct  Node * head, int  value){
 
 In `deleteAtValue` first I assigned the two structure pointers named `p` and `q`, one is equal to `head` and the second is equal to the next of head `head->next`. After that, I checked if the first Node value was equal to our required value then ran the function `deleteFirstNode(head)` and returned the head. But if the value is not equal then proceed further for the while loop and run the while loop till the data of q `q->data` not becomes equal to the value with an operation that if next of q does not equal to Null `q->next != Null` because if the next is Null that means we haven't found any value and list is ended. Loop exits if we find a value on q and if the next of `q` is `Null`. Then we check if the data of q equals our value `q->data == value` then we have found a value. If Found a value then as our `q` is the element we want to delete and `q` is one step ahead of `p`, we set our next of `p` (that was q) equal to the next of the `q`. And free the q `free(q)` and leave the if condition. And return head. But if we do not find any value then we will not change the head and return it as it is.
 
+A Visual example is here:
+
+![Deletion at Value](deletion-at-value.png)
 
 **Time Complexity**
 Its time complexity is O(n) because it has a loop and the worst case is if we have to delete the element at the end indexes of the Linked List, and its loop cycle increases depending on the index while searching for value.
