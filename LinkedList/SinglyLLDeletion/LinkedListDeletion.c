@@ -86,16 +86,16 @@ int main(){
     third = (struct Node *)malloc(sizeof(struct Node));
     fourth = (struct Node *)malloc(sizeof(struct Node));
 
-    head->data = 88;
+    head->data = 99;
     head->next = second;
 
     second->data = 48;
     second->next = third;
 
-    third->data = 27;
+    third->data = 42;
     third->next = fourth;
 
-    fourth->data = 37;
+    fourth->data = 27;
     fourth->next = NULL;
 
     printf("Initial state of Linked List: \n");

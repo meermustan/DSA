@@ -9,7 +9,7 @@ Creating a function to insert an element in singly linked list .
 
 ### Code Walkthrough and explaination
 
-Nesseary imports for the C
+Necessary imports for the C
 ```c
 #include  <stdio.h>
 #include  <stdlib.h>
